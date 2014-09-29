@@ -9,8 +9,6 @@ end
 
 require File.expand_path('../../config/environment', __FILE__)
 
-Dotenv.load '.env.test'
-
 RSpec.configure do |config|
   config.order = 'random'
 end

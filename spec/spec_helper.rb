@@ -12,3 +12,7 @@ require File.expand_path('../../config/environment', __FILE__)
 RSpec.configure do |config|
   config.order = 'random'
 end
+
+ActiveRecord::Migration.migrate(
+  File.join(RepositoriesExample.root, 'db', 'migrate')
+)

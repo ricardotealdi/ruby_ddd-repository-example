@@ -1,6 +1,6 @@
 module Entities
   describe User do
-    describe '.nil_user?' do
+    describe '#nil_user?' do
       subject(:nil_user?) { user.nil_user? }
 
       let(:user) { described_class.new }

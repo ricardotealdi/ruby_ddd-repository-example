@@ -85,5 +85,21 @@ module Entities
         it { is_expected.to be_falsy }
       end
     end
+
+    describe '.nil' do
+      subject(:nil_user) { described_class.nil }
+
+      it 'creates a user with blank id' do
+        expect(nil_user.id).to be_blank
+      end
+
+      it 'creates a user with blank name' do
+        expect(nil_user.name).to be_blank
+      end
+
+      it 'creates a user with blank email' do
+        expect(nil_user.email).to be_blank
+      end
+    end
   end
 end
